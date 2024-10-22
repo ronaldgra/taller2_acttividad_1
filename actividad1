@@ -1,0 +1,21 @@
+
+import java.util.HashMap;
+
+public class ColeccionEjemplo {
+    public static void main(String[] args) {
+        HashMap<String, Integer> estudiantes = new HashMap<>();
+        
+        // Agregar estudiantes
+        estudiantes.put("Juan Perez", 85);
+        estudiantes.put("Maria Lopez", 92);
+        estudiantes.put("Carlos Ruiz", 78);
+
+        // Actualizar calificación
+        estudiantes.put("Juan Perez", 88);
+
+        // Buscar una calificación
+        if (estudiantes.containsKey("Maria Lopez")) {
+            System.out.println("Calificación de Maria Lopez: " + estudiantes.get("Maria Lopez"));
+        }
+    }
+}
